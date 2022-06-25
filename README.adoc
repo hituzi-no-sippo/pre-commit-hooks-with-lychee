@@ -1,13 +1,18 @@
 = pre-commit-hooks-with-lychee
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2022-09-25T07:31:37+09:00
-:revremark: add overview
+:revnumber: v0.4.0
+:revdate: 2022-09-25T07:32:29+09:00
+:revremark: Add usage
 :description: README for {doctitle}
 :copyright: Copyright (C) 2022 {author}
 // Custom Attributes
 :creation_date: 2022-09-25T07:28:45+09:00
+:github_url: https://github.com
+:owner_name: hituzi-no-sippo
+:repository_name: {doctitle}
+:repository: {owner_name}/{repository_name}
+:repository_url: {github_url}/{repository}
 :pre_commit_url: https://pre-commit.com
 
 :lychee_url: https://lychee.cli.rs/#
@@ -21,6 +26,17 @@ You have to link:{lychee_url}/install[install lychee^] manually. +
 Because hook laguage is link:{pre_commit_url}#system[system^].
 It is not link:{pre_commit_url}#rust[Rust^].
 ====
+
+== Usage
+
+.pre-commit-config.yaml
+[source, YAML, subs='+attributes']
+----
+- repo: {repository_url}
+  rev: v1.0.0
+  hooks:
+    - id: lychee
+----
 
 
 '''

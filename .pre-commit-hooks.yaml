@@ -1,0 +1,7 @@
+---
+- id: lychee
+  name: Check broken links with lychee
+  description: Check broken links with lychee
+  entry: lychee --verbose --no-progress
+  language: system
+  types: [text]
