@@ -1,14 +1,26 @@
 = pre-commit-hooks-with-lychee
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2022-09-25T07:29:09+09:00
-:revremark: add MIT-0 license
+:revnumber: v0.3.0
+:revdate: 2022-09-25T07:31:37+09:00
+:revremark: add overview
 :description: README for {doctitle}
 :copyright: Copyright (C) 2022 {author}
 // Custom Attributes
 :creation_date: 2022-09-25T07:28:45+09:00
+:pre_commit_url: https://pre-commit.com
 
+:lychee_url: https://lychee.cli.rs/#
+link:{pre_commit_url}[pre-commit^] hooks for
+link:{lychee_url}[lychee^] to check broken links.
+
+.Must install lychee
+[IMPORTANT]
+====
+You have to link:{lychee_url}/install[install lychee^] manually. +
+Because hook laguage is link:{pre_commit_url}#system[system^].
+It is not link:{pre_commit_url}#rust[Rust^].
+====
 
 
 '''
